@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                makeToast("Its Goa!!");
+                makeToast("Its Goa!!!");
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("Goa", picsGoa);
                 startActivityForResult(intent, 1);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btnShillong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                makeToast("Its Shillong!!");
+                makeToast("Its Shillong!!!");
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("Shillong", picsShillong);
                 startActivityForResult(intent, 1);
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         btnManali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                makeToast("Its Manali!!");
+                makeToast("Its Manali!!!");
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("Manali", picsManali);
                 startActivityForResult(intent, 1);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         btnJodhpur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                makeToast("Its Jodhpur!!");
+                makeToast("Its Jodhpur!!!");
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("Jodhpur", picsJodhpur);
                 startActivityForResult(intent, 1);
