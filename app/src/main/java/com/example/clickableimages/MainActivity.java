@@ -2,11 +2,8 @@ package com.example.clickableimages;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -16,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnGoa, btnManali, btnShillong, btnJodhpur;
     ImageView imageDisplay;
-    String str;
+
 
     int picsGoa[] = {R.drawable.gone, R.drawable.gtwo, R.drawable.gthree, R.drawable.gfour};
     int picsManali[] = {R.drawable.mone, R.drawable.mtwo, R.drawable.mthree, R.drawable.mfour};
@@ -29,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initViews();
+        initListeners();
+
+    }
+    public void initViews()
+    {
         btnGoa = findViewById(R.id.btnGoa);
         btnManali = findViewById(R.id.btnManali);
         btnJodhpur = findViewById(R.id.btnJodhpur);
         btnShillong = findViewById(R.id.btnShillong);
         imageDisplay = findViewById(R.id.imageDisplay);
-
+    }
+    public void initListeners()
+    {
         btnGoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -88,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle bundle = data.getExtras();
 
-        int x = bundle.getInt("id");
-        imageDisplay.setImageResource(x);
+        int imageid = bundle.getInt("id");
+        imageDisplay.setImageResource(imageid);
 
     }
 

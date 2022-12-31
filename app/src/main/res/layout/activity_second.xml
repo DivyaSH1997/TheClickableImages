@@ -14,18 +14,16 @@
         android:gravity="center">
 
         <ImageView
-            android:src="@drawable/india"
             android:layout_width="500px"
             android:layout_height="300px"
-            android:id="@+id/imgAA"
+            android:id="@+id/imgA"
             android:layout_marginTop="50px"
             android:layout_marginRight="50px"
             android:layout_marginLeft="5px"/>
         <ImageView
-            android:src="@drawable/india"
             android:layout_width="500px"
             android:layout_height="300px"
-            android:id="@+id/imgBB"
+            android:id="@+id/imgB"
             android:layout_marginTop="50px"/>
 
     </LinearLayout>
@@ -37,18 +35,16 @@
         android:gravity="center">
 
         <ImageView
-            android:src="@drawable/india"
             android:layout_width="500px"
             android:layout_height="300px"
-            android:id="@+id/imgCC"
+            android:id="@+id/imgC"
             android:layout_marginTop="50px"
             android:layout_marginRight="50px"
             android:layout_marginLeft="5px"/>
         <ImageView
-           android:src="@drawable/india"
             android:layout_width="500px"
             android:layout_height="300px"
-            android:id="@+id/imgDD"
+            android:id="@+id/imgD"
             android:layout_marginTop="50px"/>
 
     </LinearLayout>
