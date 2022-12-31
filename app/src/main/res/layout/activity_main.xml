@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="100px">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clickable Image"
+        android:textSize="50px"
+        android:textColor="@color/black"
+        android:background="@color/teal_200"
+        android:gravity="center"/>
+
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="500px"
+       android:src="@drawable/india"
+       android:layout_marginLeft="10px"
+       android:id="@+id/imageDisplay"
+       android:gravity="center"
+       android:layout_marginTop="100px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:paddingLeft="10px"
+        android:gravity="center"
+        android:layout_marginTop="200px">
+
+        <Button
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:id="@+id/btnGoa"
+            android:text="Goa"
+            android:gravity="center"
+            android:layout_marginRight="100px"/>
+        <Button
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:id="@+id/btnManali"
+            android:text="Manali"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:paddingLeft="10px"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:id="@+id/btnJodhpur"
+            android:text="Jodhpur"
+            android:gravity="center"
+            android:layout_marginRight="100px"/>
+        <Button
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:id="@+id/btnShillong"
+            android:text="Shillong"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
